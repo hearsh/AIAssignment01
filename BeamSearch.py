@@ -16,6 +16,7 @@ class BeamSearch:
 
         :param input_graph: object: object of the class ExtracGraph
         '''
+
         self.graph = input_graph.createGraph()
         return
 
@@ -32,6 +33,7 @@ class BeamSearch:
             sentence: string: Complete sentence
             probability: float: probability of the sentence
         '''
+
         all_words = pre_words.split()
         length = len(all_words)
         output_heap = [{"sentence": pre_words, "probability": 1}]

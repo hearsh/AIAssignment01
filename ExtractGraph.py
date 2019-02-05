@@ -11,6 +11,7 @@ class ExtractGraph:
         Reads the .txt file and converts it to an array of sentences.
         It then calls the createGraph() method to create a graph of the data structure
         '''
+
         # Extract the directed weighted graph, and save to {head_word, [{tail_word, probability}]}
         self.graph = {}
         self.sentences_add = "data\\assign1_sentences_complete.txt"
@@ -29,6 +30,7 @@ class ExtractGraph:
 
         :return: self.graph: dict: A dictionary of all the words
         '''
+
         if not len(self.graph):
             for sentence in self.data:
                 words = sentence.split()
