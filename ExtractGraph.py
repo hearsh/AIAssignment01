@@ -14,6 +14,7 @@ class ExtractGraph:
 
         # Extract the directed weighted graph, and save to {head_word, [{tail_word, probability}]}
         self.graph = {}
+        # Replace this with the .txt file location
         self.sentences_add = "data\\assign1_sentences_complete.txt"
         self.data = open(self.sentences_add, "r")
         print("Extracting sentences and creating a directed weighted graph")

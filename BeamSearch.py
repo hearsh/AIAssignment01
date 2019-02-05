@@ -38,7 +38,7 @@ class BeamSearch:
         length = len(all_words)
         output_heap = [{"sentence": pre_words, "probability": 1}]
         self.HeapData.emptyHeap()
-        while length < maxToken:
+        while length <= maxToken:
             # Goes through all the last words in the heap
             for word in output_heap:
                 last_word = word["sentence"].split()
